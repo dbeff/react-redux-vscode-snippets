@@ -2,8 +2,8 @@
     "name": "react-redux-snippets",
     "displayName": "React Redux Snippets",
     "description": "React Redux Visual Studio Code Snippets",
-    "version": "0.0.1",
-    "icon" : "./resources/icon.png",
+    "version": "0.0.4",
+    "icon": "resources/logo.png",
     "publisher": "danielbeff",
     "engines": {
         "vscode": "^1.5.0"
@@ -14,7 +14,7 @@
     "contributes": {
         "snippets": [
             {
-                "language": "'javascript'",
+                "language": "javascript",
                 "path": "./snippets/snippets.json"
             }
         ]
