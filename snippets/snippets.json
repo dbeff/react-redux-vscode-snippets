@@ -2,115 +2,96 @@
     "constructor": {
         "prefix": "constructor",
         "body": "constructor(props){\n\tsuper(props);\n\tthis.state = {};\n}",
-        "description": "fn()",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn()"
     },
     "state": {
         "prefix": "state",
         "body": "this.state.${1:key}",
-        "description": "Object",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "Object"
     },
     "setState": {
         "prefix": "setState",
         "body": "this.setState({${1:key},${2:value}})",
-        "description": "fn({})",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn({})"
     },
     "props": {
         "prefix": "props",
         "body": "this.props.${1:key}",
-        "description": "Object",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "Object"
     },
     "render": {
         "prefix": "render",
         "body": "${1:render}(){\n\treturn(\n\t\t${2}\n\t);\n}",
-        "description": "fn()",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn()"
     },
     "componentDidMount": {
         "prefix": "componentDidMount",
         "body": "componentDidMount() {\n\t${1}\n}",
-        "description": "fn()",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn()"
     },
     "componentDidUpdate": {
         "prefix": "componentDidUpdate",
         "body": "componentDidUpdate(prevProps, prevState) {\n\t${1}\n}",
-        "description": "fn(pp,ps)",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn(pp,ps)"
     },
     "componentWillMount": {
         "prefix": "componentWillMount",
         "body": "componentWillMount() {\n\t${1}\n}",
-        "description": "fn()",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn()"
     },
     "componentWillUnmount": {
         "prefix": "componentWillUnmount",
         "body": "componentWillUnmount() {\n\t${1}\n}",
-        "description": "fn()",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn()"
     },
     "componentWillReceiveProps": {
         "prefix": "componentWillReceiveProps",
         "body": "componentWillReceiveProps(nextProps) {\n\t${1}\n}",
-        "description": "fn(np)",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn(np)"
     },
     "componentWillUpdate": {
         "prefix": "componentWillUpdate",
         "body": "componentWillUpdate(nextProps, nextState) {\n\t${1}\n}",
-        "description": "fn(np, ns)",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn(np, ns)"
     },
     "shouldComponentUpdate": {
         "prefix": "shouldComponentUpdate",
         "body": "shouldComponentUpdate(nextProps, nextState) {\n\t${1}\n}",
-        "description": "fn(np,ns)",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn(np,ns)"
     },
     "forceUpdate": {
         "prefix": "forceUpdate",
         "body": "forceUpdate()",
-        "description": "fn()",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn()"
     },
     "propTypes": {
         "prefix": "propTypes",
         "body": "${1:Class}.propTypes {\n\t${2:key}\n}",
-        "description": "Object",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "Object"
     },
     "defaultProps": {
         "prefix": "defaultProps",
         "body": "${1:Class}.defaultProps {\n\t${2:key}\n}",
-        "description": "Object",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "Object"
     },
     "mapStateToProps": {
         "prefix": "mapStateToProps",
         "body": "function mapStateToProps({${1:reducer}}) {\n\treturn{${1:reducer}}\n}",
-        "description": "fn()",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn()"
     },
     "mapDispatchToProps": {
         "prefix": "mapDispatchToProps",
         "body": "function mapDispatchToProps(dispatch) {\n\treturn bindActionCreators({${1:reducer}},dispatch)\n}",
-        "description": "fn()",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn()"
     },
     "connect": {
         "prefix": "connect",
         "body": "export default connect(mapStateToProps, mapDispatchToProps)(${1:Class})",
-        "description": "fn()",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn()"
     },
     "action": {
         "prefix": "action",
         "body": "export function ${1:name}(){\n\treturn{type:${2:ACTION_NAME},payload:${3:payload}}\n}",
-        "description": "fn()",
-        "scope": "source.js, source.jsx, source.ts"
+        "description": "fn()"
     }
 }
