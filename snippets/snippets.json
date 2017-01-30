@@ -93,5 +93,20 @@
         "prefix": "action",
         "body": "export function ${1:name}(){\n\treturn{type:${2:ACTION_NAME},payload:${3:payload}}\n}",
         "description": "fn()"
+    },
+    "container": {
+        "prefix": "container",
+        "body": "import React,{Component} from 'react';\nimport {connect} from 'react-redux';\nimport {bindActionCreators} from 'redux';\n\nclass ${1:Class} extends Component {\n\n    constructor(props){\n        super(props);\n        this.state = {};\n    }\n\n    render() {\n        return (\n            <div className=\"${2:class-name}\">\n                ${3:content}\n            </div>\n        );\n    }\n}\n\nfunction mapStateToProps({}){\n    return {};\n}\n\nfunction mapDispatchToProps(dispatch){\n    return bindActionCreators({},dispatch);\n}\n\nexport default connect (mapStateToProps,mapDispatchToProps)(${1:Class});\n",
+        "description": "React container"
+    },
+    "component": {
+        "prefix": "component",
+        "body": "import React,{Component} from 'react';\n\nexport default class ${1:Class} extends Component {\n\n    render() {\n        return (\n            <div className=\"${2:class-name}\">\n                ${3:content}\n            </div>\n        );\n    }\n}",
+        "description": "React component"
+    },
+    "reducer": {
+        "prefix": "reducer",
+        "body": "import {${1:ACTION}} from '../actions/index';\n\nconst initialState = ${2:initialState}\n\nexport default function(state = initialState,action) {\n    switch (action.type){\n        case ${3:ACTION}:\n            return ${4:action.payload}\n    }\n    return state;\n}\n",
+        "description": "React component"
     }
 }
